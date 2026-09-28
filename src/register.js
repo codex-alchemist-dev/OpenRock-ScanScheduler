@@ -92,5 +92,7 @@ function register() {
     return { api: { createScanScheduler } };
 }
 
-module.exports = register;
-module.exports.createScanScheduler = createScanScheduler;
+// Object.assign() in ONE statement - see @openrock/pathfinding's header for
+// why (esbuild tree-shaking dropped separate trailing assignments, caught
+// via a real BDS run).
+module.exports = Object.assign(register, { createScanScheduler });
