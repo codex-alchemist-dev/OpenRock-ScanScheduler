@@ -1,0 +1,8 @@
+{
+  "name": "@openrock/scan-scheduler",
+  "version": "1.0.0",
+  "description": "The tiered active/idle/dormant update-rate discipline this project has already been burned by not following once - nothing should tick unconditionally every game tick regardless of whether anyone is nearby.",
+  "license": "MPL-2.0",
+  "private": true,
+  "main": "src/register.js"
+}
